@@ -1,11 +1,10 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"id": "Notex.Drone",
 	"name": "Drone",
 	"description": "A flyable drone.",
-	"authors": [
-		"Notex"
-	],
-	"frameworkVersion": "2.33.9"
+	"authors": ["Notex"],
+	"frameworkVersion": "2.33.35",
+	"updateCheck": "https://github.com/NotexMods/h3-drone/releases/latest/download/updates.json"
 }
