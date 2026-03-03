@@ -229,9 +229,9 @@
 					"type": "bool",
 					"value": true
 				},
-				"m_sPromptText": {
-					"type": "ZString",
-					"value": "Control drone"
+				"m_rPromptTextResource": {
+					"type": "ZRuntimeResourceID",
+					"value": "[assembly:/localization/hitman6/conversations/ui/pro/hud.sweetmenutext?/ui_prop_gadget_drone_name.sweetline].pc_sweetline"
 				},
 				"m_sPromptTextPassive": {
 					"type": "ZString",
