@@ -785,7 +785,7 @@
 					"type": "SMatrix43",
 					"value": {
 						"rotation": { "x": -0.0, "y": 0, "z": -0.0 },
-						"position": { "x": 0, "y": -0.025, "z": 0.012 }
+						"position": { "x": 0, "y": -0.2, "z": 0.012 }
 					}
 				},
 				"m_dtBlendOut": { "type": "float32", "value": 0.1 },
