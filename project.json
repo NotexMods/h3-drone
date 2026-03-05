@@ -7,7 +7,7 @@
 		"[assembly:/_pro/environment/geometry/props/gadgets/drone_a.wl2?/drone_a.prim].pc_entitytype",
 		"[assembly:/_pro/environment/geometry/props/gadgets/drone_a.wl2?/drone_a.prim].pc_prim",
 		"[assembly:/_pro/environment/geometry/props/gadgets/drone_a.wl2?/drone_a.prim].pc_coll",
-		"[assembly:/_pro/ui/common/icons_inventoryitems/item_left_946c60df-6fae-4abc-af6f-6bd7b2d28126_0.png].pc_gfx",
+		"[assembly:/_pro/ui/common/icons_inventoryitems/item_left_5661d56b-7686-4235-b0a6-f00e6cd4797c_0.png].pc_gfx",
 		"[assembly:/templates/aspectdummy.aspect]([assembly:/_pro/environment/geometry/props/gadgets/drone_a.wl2?/drone_a.prim].entitytype,[modules:/zgeomscalesaveaspect.class].entitytype).pc_entitytype",
 		"[assembly:/_pro/design/items/prop_notex_runtimes.template?/prop_remote_gadget_drone.entitytemplate].pc_entitytemplate",
 		"[assembly:/_pro/design/items/prop_notex_runtimes.template?/prop_remote_gadget_drone.entitytemplate].pc_entityblueprint",

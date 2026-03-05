@@ -1,6 +1,6 @@
 {
-	"946c60df-6fae-4abc-af6f-6bd7b2d28126": {
-		"ID_": "946c60df-6fae-4abc-af6f-6bd7b2d28126",
+	"5661d56b-7686-4235-b0a6-f00e6cd4797c": {
+		"ID_": "5661d56b-7686-4235-b0a6-f00e6cd4797c",
 		"AdditionalKeywords": ["NONE"],
 		"CanBeDropped": false,
 		"CarryAnimSetType": "EAST_CARRY_WEAPON_ITEM",
@@ -10,8 +10,8 @@
 		"EnablePickUpOnRelease": true,
 		"GripAnimType": "IGT_Melee_1H_FireExtinguisher",
 		"HolsterAbility": "eHolsteringAllowed",
-		"HudIcon": "17297385328519670",
-		"Image": "images/unlockables/item_perspective_946c60df-6fae-4abc-af6f-6bd7b2d28126_0.jpg",
+		"HudIcon": "27983463601412197",
+		"Image": "images/unlockables/item_perspective_5661d56b-7686-4235-b0a6-f00e6cd4797c_0.jpg",
 		"InventoryCategoryIcon": "tool",
 		"InventoryCategoryName": "tool",
 		"ItemHandsCoverAnimLayer": "IH_ONEHANDED",
