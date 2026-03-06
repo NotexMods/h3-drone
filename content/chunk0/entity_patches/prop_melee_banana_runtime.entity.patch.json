@@ -1,31 +1,31 @@
 {
-	"tempHash": "0077C06EFBE04C53",
-	"tbluHash": "00D008845008CBB9",
+	"tempHash": "0081B00895C6FD6B",
+	"tbluHash": "00FB3CAE336F6090",
 	"patch": [
 		{
 			"AddEntity": [
-				"cafef97d2d1ef057",
+				"cafe9ef59cab8375",
 				{
-					"parent": "a33ef16abe899c18",
+					"parent": "cd337a1d71e25823",
 					"name": "ItemHelper_Drone_CollisionListener",
 					"factory": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_drone_collisionlistener.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_drone_collisionlistener.entitytemplate].pc_entityblueprint",
 					"properties": {
 						"m_Listener": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": ["f65100512efb4c9a"],
+							"value": ["8f005e9e93dcfebc"],
 							"postInit": true
 						},
 						"m_rTarget": {
 							"type": "SEntityTemplateReference",
-							"value": "f65100512efb4c9a",
+							"value": "8f005e9e93dcfebc",
 							"postInit": true
 						}
 					},
 					"events": {
 						"OnImpact": {
-							"Impact": ["71b43c66f1684c1c"],
-							"TriggerSmallExplosion": ["a88a365c6d4de4ec"]
+							"ItemPlaced": ["b6ea4af97007b93b"],
+							"In": ["b74d0b57ba70b2d0"]
 						}
 					}
 				}

@@ -7,25 +7,18 @@
 				"cafe05eec3e02159",
 				{
 					"parent": "b54d1ca55da20fa2",
-					"name": "Drone",
-					"factory": "[modules:/zentity.class].pc_entitytype",
-					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"cafed59459c3c61b",
-				{
-					"parent": "cafe05eec3e02159",
-					"name": "CollisionListener",
-					"factory": "[modules:/zcollisionlistenerentity.class].pc_entitytype",
-					"blueprint": "[modules:/zcollisionlistenerentity.class].pc_entityblueprint",
+					"name": "ItemHelper_Drone_CollisionListener",
+					"factory": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_drone_collisionlistener.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_drone_collisionlistener.entitytemplate].pc_entityblueprint",
 					"properties": {
-						"m_bEnabled": { "type": "bool", "value": false },
 						"m_Listener": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": ["b54d1ca55da20fa2"],
+							"value": ["9676bc686da112a6"],
+							"postInit": true
+						},
+						"m_rTarget": {
+							"type": "SEntityTemplateReference",
+							"value": "9676bc686da112a6",
 							"postInit": true
 						}
 					},
@@ -33,104 +26,6 @@
 						"OnImpact": {
 							"Impact": ["64aa99be5978bce6"],
 							"TriggerSmallExplosion": ["d27b0b052d1b19e8"]
-						}
-					}
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"cafefd4837406ffc",
-				{
-					"parent": "cafe05eec3e02159",
-					"name": "EVR_Drone_Payload_TriggerDropped",
-					"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype",
-					"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint",
-					"properties": {
-						"m_rChannelToken": {
-							"type": "SEntityTemplateReference",
-							"value": "cafe63907d27c967"
-						}
-					},
-					"events": {
-						"EventReceived": { "Poll": ["cafe39757c5ef1c7"] }
-					}
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"cafe63907d27c967",
-				{
-					"parent": "cafefd4837406ffc",
-					"name": "Token_Drone_Payload_TriggerDropped",
-					"factory": "[modules:/ztokenidentity.class].pc_entitytype",
-					"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
-					"properties": {
-						"m_sName": {
-							"type": "ZString",
-							"value": "Drone_Payload_TriggerDropped"
-						}
-					}
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"cafe39757c5ef1c7",
-				{
-					"parent": "cafe05eec3e02159",
-					"name": "Poll_Keyword_Drone_ItemStashed",
-					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
-					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
-					"properties": {
-						"m_rValueEntity": {
-							"type": "SEntityTemplateReference",
-							"value": "cafe69c9a42d9282"
-						}
-					},
-					"events": {
-						"PollTrue": { "Enable": ["cafed59459c3c61b"] }
-					}
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"cafe69c9a42d9282",
-				{
-					"parent": "cafe05eec3e02159",
-					"name": "KeywordCondition_Drone_ItemStashed",
-					"factory": "[modules:/zkeywordcondition.class].pc_entitytype",
-					"blueprint": "[modules:/zkeywordcondition.class].pc_entityblueprint",
-					"properties": {
-						"m_rRequirements": {
-							"type": "SEntityTemplateReference",
-							"value": "cafe3852d7a9eafb",
-							"postInit": true
-						},
-						"m_rTarget": {
-							"type": "SEntityTemplateReference",
-							"value": "9676bc686da112a6",
-							"postInit": true
-						},
-						"m_bSubscribe": { "type": "bool", "value": true }
-					}
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"cafe3852d7a9eafb",
-				{
-					"parent": "cafe69c9a42d9282",
-					"name": "Keyword_Drone_ItemStashed",
-					"factory": "[modules:/zkeywordentity.class].pc_entitytype",
-					"blueprint": "[modules:/zkeywordentity.class].pc_entityblueprint",
-					"properties": {
-						"m_sKeyword": {
-							"type": "ZString",
-							"value": "Drone_ItemStashed"
 						}
 					}
 				}
