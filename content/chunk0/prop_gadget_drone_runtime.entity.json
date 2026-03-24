@@ -8143,7 +8143,6 @@
 				"m_aEnterEffects": {
 					"type": "TArray<SEntityTemplateReference>",
 					"value": [
-						"cafeb903a7173fd8",
 						"cafe2347f819958c",
 						"cafe0c6fbd3e181c"
 					],
@@ -8169,19 +8168,6 @@
 						"cafe1808e58aaa42"
 					],
 					"postInit": true
-				}
-			}
-		},
-		"cafeb903a7173fd8": {
-			"parent": "cafe70afe391a23a",
-			"name": "ActorPickerEffectReference",
-			"factory": "[modules:/zactorpickereffectreference.class].pc_entitytype",
-			"blueprint": "[modules:/zactorpickereffectreference.class].pc_entityblueprint",
-			"events": {
-				"OnIActor": {
-					"Variant": [
-						"cafe2b5e5981e325"
-					]
 				}
 			}
 		},
@@ -8345,12 +8331,6 @@
 					"postInit": true
 				}
 			}
-		},
-		"cafe2b5e5981e325": {
-			"parent": "cafeb903a7173fd8",
-			"name": "HMVariantConverterEntity_void",
-			"factory": "[modules:/zhm5variantconverterentity_void.class].pc_entitytype",
-			"blueprint": "[modules:/zhm5variantconverterentity_void.class].pc_entityblueprint"
 		},
 		"cafe367d2c9f1c24": {
 			"parent": "cafe70afe391a23a",
@@ -10680,8 +10660,8 @@
 			},
 			"events": {
 				"OnValue": {
-					"A": [
-						"cafe9e42e6a1bcf6"
+					"Input": [
+						"cafe5ff0c05cea31"
 					]
 				}
 			}
@@ -10698,36 +10678,8 @@
 				}
 			}
 		},
-		"cafe266ba047efd9": {
-			"parent": "cafe17bfecbc1afd",
-			"name": "Raycast spatial",
-			"factory": "[modules:/zspatialentity.class].pc_entitytype",
-			"blueprint": "[modules:/zspatialentity.class].pc_entityblueprint",
-			"properties": {
-				"m_mTransform": {
-					"type": "SMatrix43",
-					"value": {
-						"rotation": {
-							"x": 90,
-							"y": 0,
-							"z": 90
-						},
-						"position": {
-							"x": 0,
-							"y": 0,
-							"z": 0.1
-						}
-					}
-				},
-				"m_eidParent": {
-					"type": "SEntityTemplateReference",
-					"value": "cafe8b6177f08e7d",
-					"postInit": true
-				}
-			}
-		},
 		"cafe788c7ac18280": {
-			"parent": "cafe266ba047efd9",
+			"parent": "cafe17bfecbc1afd",
 			"name": "HM5DynamicRaycast",
 			"factory": "[modules:/zhm5dynamicraycastentity.class].pc_entitytype",
 			"blueprint": "[modules:/zhm5dynamicraycastentity.class].pc_entityblueprint",
@@ -10736,9 +10688,9 @@
 					"type": "SMatrix43",
 					"value": {
 						"rotation": {
-							"x": -180.0,
+							"x": -180,
 							"y": 0.0,
-							"z": -180.0
+							"z": -90
 						},
 						"position": {
 							"x": 0.0,
@@ -10761,7 +10713,7 @@
 				},
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
-					"value": "cafe266ba047efd9",
+					"value": "cafe8b6177f08e7d",
 					"postInit": true
 				}
 			},
@@ -10779,29 +10731,6 @@
 				"OnRayLeave": {
 					"SetFalse": [
 						"cafe6d9fdbee45df"
-					]
-				}
-			}
-		},
-		"cafe9e42e6a1bcf6": {
-			"parent": "cafe266ba047efd9",
-			"name": "MultiplyDivide",
-			"factory": "[modules:/zmathmultiplydivide.class].pc_entitytype",
-			"blueprint": "[modules:/zmathmultiplydivide.class].pc_entityblueprint",
-			"properties": {
-				"m_bDivide": {
-					"type": "bool",
-					"value": false
-				},
-				"m_fB": {
-					"type": "float32",
-					"value": 1
-				}
-			},
-			"events": {
-				"Out": {
-					"Input": [
-						"cafe5ff0c05cea31"
 					]
 				}
 			}
