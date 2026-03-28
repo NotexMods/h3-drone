@@ -1858,7 +1858,7 @@
 				"m_aPromptText": {
 					"type": "TArray<SEntityTemplateReference>",
 					"value": [
-						"cafee7da23609262",
+						"cafeebf108fe987d",
 						"cafebd0f8e79eaa9"
 					]
 				},
@@ -1868,7 +1868,7 @@
 				},
 				"m_UseableCondition": {
 					"type": "SEntityTemplateReference",
-					"value": "cafe0d2f3c8dc503"
+					"value": "cafe1cd21e6a5817"
 				},
 				"m_VisibleCondition": {
 					"type": "SEntityTemplateReference",
@@ -8040,6 +8040,11 @@
 					"TransmitEvent": [
 						"cafe1e8af949aec0"
 					]
+				},
+				"PollFalse": {
+					"Grab": [
+						"cafefcb20c37efcb"
+					]
 				}
 			}
 		},
@@ -10734,6 +10739,178 @@
 					]
 				}
 			}
+		},
+		"cafeebf108fe987d": {
+			"parent": "cafe930642d09d74",
+			"name": "Grab Payload",
+			"factory": "[modules:/zconditionalformattedtextlineentity.class].pc_entitytype",
+			"blueprint": "[modules:/zconditionalformattedtextlineentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sweetText": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/localization/hitman6/conversations/ui/pro/gamemode_evergreen/evergreen_setpieces.sweetmenutext?/evergreen_setpieces_gearwall_item_pickup.sweetline].pc_sweetline",
+						"flag": "5F"
+					}
+				},
+				"m_argsText": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [],
+					"postInit": true
+				},
+				"m_isEnabled": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe6429a4d628d6",
+					"postInit": true
+				}
+			}
+		},
+		"cafefcb20c37efcb": {
+			"parent": "cafe071a0fa6bb75",
+			"name": "ItemGrabber",
+			"factory": "[modules:/zitemgrabber.class].pc_entitytype",
+			"blueprint": "[modules:/zitemgrabber.class].pc_entityblueprint",
+			"properties": {
+				"m_rSearchVolume": {
+					"type": "SEntityTemplateReference",
+					"value": "cafeba039c663c0c"
+				}
+			},
+			"events": {
+				"Item": {
+					"SetItem": [
+						"cafedc30a4196db1",
+						"cafedbbc0403a52d"
+					]
+				}
+			}
+		},
+		"cafeba039c663c0c": {
+			"parent": "cafe071a0fa6bb75",
+			"name": "VolumeBox",
+			"factory": "[modules:/zboxvolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": -0.0,
+							"y": 0,
+							"z": -0.0
+						},
+						"position": {
+							"x": 0,
+							"y": 0,
+							"z": -0.3
+						}
+					}
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 0.6,
+						"y": 0.6,
+						"z": 0.5
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe8b6177f08e7d"
+				}
+			}
+		},
+		"cafedbbc0403a52d": {
+			"parent": "cafe071a0fa6bb75",
+			"name": "ItemKeywordProxy",
+			"factory": "[modules:/zitemkeywordproxyentity.class].pc_entitytype",
+			"blueprint": "[modules:/zitemkeywordproxyentity.class].pc_entityblueprint",
+			"events": {
+				"OnItemSet": {
+					"In": [
+						"cafe0cb1a6b5a959"
+					]
+				}
+			}
+		},
+		"cafe88ebde14a97a": {
+			"parent": "cafe071a0fa6bb75",
+			"name": "KeywordCondition",
+			"factory": "[modules:/zkeywordcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zkeywordcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rRequirements": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "cafe7251aa60bdc2",
+						"exposedEntity": "Keywords",
+						"externalScene": null
+					}
+				},
+				"m_eEvaluation": {
+					"type": "ZKeywordCondition.EEvaluationType",
+					"value": "ANY"
+				},
+				"m_rTarget": {
+					"type": "SEntityTemplateReference",
+					"value": "cafedbbc0403a52d"
+				}
+			},
+			"events": {
+				"OnTrue": {
+					"GetItem": [
+						"cafedc30a4196db1"
+					]
+				}
+			}
+		},
+		"cafedc30a4196db1": {
+			"parent": "cafe071a0fa6bb75",
+			"name": "HM5ItemProxy",
+			"factory": "[modules:/zhm5itemproxy.class].pc_entitytype",
+			"blueprint": "[modules:/zhm5itemproxy.class].pc_entityblueprint",
+			"events": {
+				"OnGetItem": {
+					"PlaceItem": [
+						"cafe0d2f3c8dc503"
+					],
+					"SetItem": [
+						"cafea89de5d511e7",
+						"cafe1b8f5ca8e967"
+					],
+					"Input": [
+						"cafe25ea5c170f16"
+					],
+					"TransmitEvent": [
+						"cafea77395ca6cc7"
+					]
+				}
+			}
+		},
+		"cafe0cb1a6b5a959": {
+			"parent": "cafe071a0fa6bb75",
+			"name": "TimerSimple",
+			"factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Delay time (ms)": {
+					"type": "int32",
+					"value": 33
+				}
+			},
+			"events": {
+				"Out": {
+					"Get": [
+						"cafe88ebde14a97a"
+					]
+				}
+			}
+		},
+		"cafe071a0fa6bb75": {
+			"parent": "cafe930642d09d74",
+			"name": "Grab payload",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
 		}
 	},
 	"propertyOverrides": [],
