@@ -2499,6 +2499,15 @@
 					],
 					"MakeVisible": [
 						"cafe16cba14eb96e"
+					],
+					"SetProgress": [
+						{
+							"ref": "cafe885ad054bfa4",
+							"value": {
+								"type": "float32",
+								"value": 1
+							}
+						}
 					]
 				},
 				"OnFalse": {
@@ -3518,14 +3527,6 @@
 					"T": [
 						"cafe6f8eef55a82f"
 					]
-				},
-				"OnStopped": {
-					"EnablePickup": [],
-					"MakeVisible": [],
-					"Disable": [],
-					"Enable": [],
-					"EnableCover": [],
-					"SetFalse": []
 				}
 			}
 		},
@@ -3592,14 +3593,6 @@
 					"T": [
 						"cafeacaba05dee59"
 					]
-				},
-				"OnStopped": {
-					"EnablePickup": [],
-					"MakeVisible": [],
-					"Disable": [],
-					"Enable": [],
-					"EnableCover": [],
-					"SetFalse": []
 				}
 			}
 		},
