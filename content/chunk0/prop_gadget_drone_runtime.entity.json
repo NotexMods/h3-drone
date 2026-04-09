@@ -435,7 +435,7 @@
 		},
 		"cafecd14e12d783c": {
 			"parent": "cafe09d47e85bfc3",
-			"name": "zhm5valueentity_svector3",
+			"name": "HM5ValueEntity_svector3",
 			"factory": "[modules:/zhm5valueentity_svector3.class].pc_entitytype",
 			"blueprint": "[modules:/zhm5valueentity_svector3.class].pc_entityblueprint",
 			"properties": {
@@ -2212,7 +2212,7 @@
 		},
 		"cafe1f16edae2692": {
 			"parent": "cafef0f045e1941b",
-			"name": "zhm5valueentity_svector3",
+			"name": "HM5ValueEntity_svector3",
 			"factory": "[modules:/zhm5valueentity_svector3.class].pc_entitytype",
 			"blueprint": "[modules:/zhm5valueentity_svector3.class].pc_entityblueprint",
 			"properties": {
@@ -3122,9 +3122,6 @@
 				"AxisValue": {
 					"A": [
 						"cafe7f66ee69289a"
-					],
-					"Variant": [
-						"cafe5dd62a6164fb"
 					]
 				},
 				"OnNeutral": {
@@ -3689,7 +3686,7 @@
 			"properties": {
 				"m_sExpression": {
 					"type": "ZString",
-					"value": "20 + (a * 10)"
+					"value": "30 + (a * 10)"
 				}
 			},
 			"events": {
@@ -5624,6 +5621,9 @@
 				"OnSpeedChanged": {
 					"A": [
 						"cafe92f32de09fc3"
+					],
+					"Variant": [
+						"cafe5dd62a6164fb"
 					]
 				}
 			}
