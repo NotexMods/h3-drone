@@ -134,7 +134,7 @@
 		"ItemType": "eDetonator",
 		"Name_LOC": "ui_prop_remote_gadget_drone_name",
 		"OnlineTraits": [
-			"detonator_explosive_device"
+			"NONE"
 		],
 		"Runtime": "22292023846378562",
 		"Title": "Drone remote",
