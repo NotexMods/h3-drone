@@ -176,7 +176,7 @@
 				"cafece3d082efb83",
 				{
 					"parent": "cafe7c3fadfd5dc2",
-					"name": "ActorKeywordCondition",
+					"name": "ActorKeywordCondition_Drone_Actor_Grabbed",
 					"factory": "[modules:/zactorkeywordcondition.class].pc_entitytype",
 					"blueprint": "[modules:/zactorkeywordcondition.class].pc_entityblueprint",
 					"properties": {
@@ -871,7 +871,7 @@
 				"cafe3e082118b534",
 				{
 					"parent": "cafe7c3fadfd5dc2",
-					"name": "ActorKeywordCondition 2",
+					"name": "ActorKeywordCondition_ACTOR_PACIFIED",
 					"factory": "[modules:/zactorkeywordcondition.class].pc_entitytype",
 					"blueprint": "[modules:/zactorkeywordcondition.class].pc_entityblueprint",
 					"properties": {
@@ -989,6 +989,50 @@
 							]
 						}
 					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe8fb018eafc0b",
+				{
+					"parent": "cafe7c3fadfd5dc2",
+					"name": "ActorKeywordCondition_ACTOR_ALIVE",
+					"factory": "[modules:/zactorkeywordcondition.class].pc_entitytype",
+					"blueprint": "[modules:/zactorkeywordcondition.class].pc_entityblueprint",
+					"properties": {
+						"m_rActor": {
+							"type": "SEntityTemplateReference",
+							"value": "0594561be5ddfb63"
+						},
+						"m_rRequirements": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe95564ce56b69",
+							"postInit": true
+						},
+						"m_bSubscribeToKeywordChanges": {
+							"type": "bool",
+							"value": true
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"Poll": [
+								"cafe368138103954"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe95564ce56b69",
+				{
+					"parent": "cafe8fb018eafc0b",
+					"name": "Keyword_ACTOR_ALIVE",
+					"factory": "[assembly:/_pro/design/gamecore/keywords/keywordsactor.template?/keyword_actor_alive.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordsactor.template?/keyword_actor_alive.entitytemplate].pc_entityblueprint"
 				}
 			]
 		}
