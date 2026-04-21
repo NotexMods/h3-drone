@@ -293,13 +293,13 @@
 				"cafe1b6abe44d5ea",
 				{
 					"parent": "cafe12776a0fbe43",
-					"name": "SpeakEntity_Sounddef_Dth_Burn",
+					"name": "SpeakEntity_Sounddef_Dth_Fll",
 					"factory": "[modules:/zspeakentity_sounddef.class].pc_entitytype",
 					"blueprint": "[modules:/zspeakentity_sounddef.class].pc_entityblueprint",
 					"properties": {
 						"m_eSoundDef": {
 							"type": "EActorSoundDefs",
-							"value": "Dth_Burn"
+							"value": "Dth_Fll"
 						},
 						"m_rActor": {
 							"type": "SEntityTemplateReference",
