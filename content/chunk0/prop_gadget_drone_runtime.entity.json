@@ -176,6 +176,11 @@
 					"SetFalse": [
 						"cafe1fb758801729"
 					]
+				},
+				"OnDestroyed": {
+					"SetTrue": [
+						"cafe34b525aaabcd"
+					]
 				}
 			},
 			"subsets": {
