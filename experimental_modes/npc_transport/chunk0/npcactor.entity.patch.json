@@ -53,8 +53,8 @@
 				{
 					"parent": "cafe7c3fadfd5dc2",
 					"name": "Linked",
-					"factory": "[assembly:/_pro/characters/templates/_chartools/character_parts_selective_female.template?/linked.entitytemplate].pc_entitytype",
-					"blueprint": "[assembly:/_pro/characters/templates/_chartools/character_parts_selective_female.template?/linked.entitytemplate].pc_entityblueprint",
+					"factory": "[modules:/zlinkedentity.class].pc_entitytype",
+					"blueprint": "[modules:/zlinkedentity.class].pc_entityblueprint",
 					"properties": {
 						"m_mTransform": {
 							"type": "SMatrix43",
@@ -67,7 +67,7 @@
 								"position": {
 									"x": 0,
 									"y": 0,
-									"z": -1.8
+									"z": -0.3
 								}
 							}
 						},
